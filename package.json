@@ -2,10 +2,10 @@
   "name": "mern-goalsetter",
   "version": "1.0.0",
   "description": "Goalsetter app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backened/server.js",
-    "server": "nodemon backened/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "Mark Winters",

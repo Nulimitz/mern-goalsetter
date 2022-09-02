@@ -23,6 +23,7 @@ Project is created with:
 - Mongoose
 - ReactJS
 - React Router Dom
+- Redux and Redux Toolkit
 
 ## Features
 
@@ -36,6 +37,8 @@ Project is created with:
 Create a `.env` file in the root directory and fill it with the following informations :
 
 ```
+NODE_ENV = "development"
+
 PORT=5000
 
 DATABASE_CONNECTION="Your DB URI"
@@ -55,8 +58,8 @@ EMAIL_FROM=""
 ## Quick Start
 
 ```Javascript
-// Install dependencies for server & client
-npm install && npm run client-install
+// Install dependencies for backend & frontend
+npm install
 
 // Run client & server with concurrently
 npm run dev

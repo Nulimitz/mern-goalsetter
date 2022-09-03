@@ -22,7 +22,7 @@ function Login() {
   return (
     <div className="row mt-5">
       <div className="col-md-5 m-auto">
-        <header className="text-center">
+        <header className="text-center mb-3">
           <h1>
             <i className="bi bi-box-arrow-in-right"></i> Login
           </h1>

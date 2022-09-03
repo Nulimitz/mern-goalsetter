@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Navbar";
 
 function Layouts({ children }) {
@@ -7,6 +9,7 @@ function Layouts({ children }) {
       <main>
         <div className="container">{children}</div>
       </main>
+      <ToastContainer />
     </>
   );
 }

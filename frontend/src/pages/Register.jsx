@@ -1,4 +1,10 @@
 import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { register, reset } from "../features/auth/authSlice";
+
+import Spinner from "../componets/Spinner";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -10,6 +16,24 @@ function Register() {
 
   const { name, email, password, confirmpassword } = formData;
 
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
+    if (isSuccess || user) {
+      navigate("/");
+    }
+
+    dispatch(reset);
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
+
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -19,12 +43,28 @@ function Register() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    if (password !== confirmpassword) {
+      toast.error("Passwords do not match");
+    } else {
+      const userData = {
+        name,
+        email,
+        password,
+      };
+
+      dispatch(register(userData));
+    }
   };
+
+  if (isLoading) {
+    <Spinner />;
+  }
 
   return (
     <div className="row mt-5">
       <div className="col-md-5 m-auto">
-        <header className="text-center">
+        <header className="text-center mb-3">
           <h1>
             <i className="bi bi-person"></i> Register
           </h1>
@@ -33,7 +73,7 @@ function Register() {
         <form onSubmit={onSubmit}>
           <div className="mb-3">
             <input
-              type="email"
+              type="text"
               className="form-control"
               id="name"
               name="name"

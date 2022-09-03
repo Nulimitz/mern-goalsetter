@@ -12,7 +12,7 @@
 
 ## General Info
 
-This MERN Goalsetter app is based on this [Youtube](https://www.youtube.com/watch?v=PBTYxXADG_k&list=PLillGF-RfqbbiTGgA77tGO426V3hRF9iE) tutorial. I have added Bootstrap and Bootstrap Icons.
+This MERN Goalsetter app is based on this [Youtube](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial. I have added Bootstrap and Bootstrap Icons.
 
 ## Technologies
 
@@ -29,8 +29,8 @@ Project is created with:
 
 - Goal CRUD
 - Authentication
-- Forgot password
-- Password reset
+- Bootstrap 5
+- Bootstrap Icons
 
 ## Configuration
 
@@ -73,4 +73,4 @@ Project is in progress. The API is completed. Just need work on the React fronte
 
 ## Acknowledgements
 
-- This project was based on this [Youtube](https://www.youtube.com/watch?v=PBTYxXADG_k&list=PLillGF-RfqbbiTGgA77tGO426V3hRF9iE) tutorial.
+- This project was based on this [Youtube](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial.

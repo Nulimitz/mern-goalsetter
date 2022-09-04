@@ -12,7 +12,7 @@
 
 ## General Info
 
-This MERN Goalsetter app is based on this [Youtube](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial. I have added Bootstrap and Bootstrap Icons.
+This project is based on the [Learn the MERN Stack](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial on YouTube. I have added Bootstrap and Bootstrap Icons.
 
 ## Technologies
 
@@ -24,13 +24,13 @@ Project is created with:
 - ReactJS
 - React Router Dom
 - Redux and Redux Toolkit
+- Bootstrap
+- Bootstrap Icons
 
 ## Features
 
 - Goal CRUD
 - Authentication
-- Bootstrap 5
-- Bootstrap Icons
 
 ## Configuration
 
@@ -73,4 +73,4 @@ Project is in progress. The API is completed. Just need work on the React fronte
 
 ## Acknowledgements
 
-- This project was based on this [Youtube](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial.
+- This project is based on the [Learn the MERN Stack](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm) tutorial on YouTube.

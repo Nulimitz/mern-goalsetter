@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg bg-transparent navbar-light">
-      <div className="container-fluid">
+      <div className="container">
         <Link to="/" className="navbar-brand">
           <span>Goalsetter</span>
         </Link>
@@ -35,7 +35,7 @@ function Navbar() {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {user ? (
               <li className="nav-item">
-                <button className="btn btn-dark" href="#" onClick={onLogout}>
+                <button className="btn btn-outline-primary" onClick={onLogout}>
                   <span>
                     <i className="bi bi-box-arrow-in-right"></i> Logout
                   </span>

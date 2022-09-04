@@ -30,7 +30,7 @@ function Dashboard() {
     return () => {
       dispatch(reset());
     };
-  }, [user, navigate, isError, message, dispatch]);
+  }, []);
 
   if (isLoading) {
     return <Spinner />;

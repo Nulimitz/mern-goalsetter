@@ -1,4 +1,4 @@
-# MERN Gaolsetter App
+# MERN Goalsetter App
 
 ## Table of Contents
 
